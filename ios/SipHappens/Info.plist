@@ -33,7 +33,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+betterlo</string>
+          <string>exp+sip-happens</string>
         </array>
       </dict>
     </array>
