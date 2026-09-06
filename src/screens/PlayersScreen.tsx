@@ -9,7 +9,7 @@ import {
   TextInput, Animated, Image, Keyboard, TouchableWithoutFeedback,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import * as Haptics from 'expo-haptics';
 import * as ImagePicker from 'expo-image-picker';
@@ -20,14 +20,24 @@ import { useGame } from '../components/GameContext';
 import Logo from '../components/Logo';
 import { JackButton, JackIconButton } from '../components/jack';
 
-type Props = {
-  navigation: NativeStackNavigationProp<RootStackParamList, 'Players'>;
-};
+// The lobby is shared by both game modes, so route.params.next says where to
+// go when the group is ready. Truth or Dare arrives here from DeckSelect,
+// Trivia from TriviaSetup.
+type Props = NativeStackScreenProps<RootStackParamList, 'Players'>;
 
 const BONUS_STEPS = [0, 1, 2, 3] as const;
 const BONUS_DISPLAY = ['Standard', '+1 sip', '+2 sips', '+3 sips'] as const;
 
-export default function PlayersScreen({ navigation }: Props) {
+export default function PlayersScreen({ navigation, route }: Props) {
+  const next = route.params?.next ?? 'Game';
+  const isTruthOrDare = next === 'Game';
+  // Screw the Dealer needs a dealer plus enough opponents for "beat 3 in a
+  // row" to mean anything; with two players the dealer faces the same person
+  // three times running.
+  // Word Traitors needs enough bodies for the traitor to hide among; Screw the
+  // Dealer needs a dealer plus enough opponents for "beat 3 in a row" to mean
+  // anything. Both are 3.
+  const minPlayers = next === 'DealerGame' || next === 'TraitorsGame' ? 3 : 2;
   const { state, addPlayer, removePlayer, updatePlayerPhoto, startGame, toggleMode, setSipBonus } = useGame();
   const [inputValue, setInputValue] = useState('');
   const shakeAnim = useRef(new Animated.Value(0)).current;
@@ -68,10 +78,12 @@ export default function PlayersScreen({ navigation }: Props) {
   };
 
   const handleStart = () => {
-    if (state.players.length < 2) return;
-    startGame();
+    if (state.players.length < minPlayers) return;
+    // startGame() seeds Truth-or-Dare round state (currentRound/totalRounds).
+    // Trivia tracks its own progress in useTriviaEngine, so skip it there.
+    if (isTruthOrDare) startGame();
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
-    navigation.navigate('Game');
+    navigation.navigate(next);
   };
 
   const handleBonusChange = (value: 0 | 1 | 2 | 3) => {
@@ -80,7 +92,7 @@ export default function PlayersScreen({ navigation }: Props) {
     setSipBonus(value);
   };
 
-  const canStart = state.players.length >= 2;
+  const canStart = state.players.length >= minPlayers;
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
@@ -135,7 +147,7 @@ export default function PlayersScreen({ navigation }: Props) {
             {state.players.length === 0 ? (
               <View style={styles.emptyState}>
                 <Ionicons name="people-outline" size={40} color={Colors.outlineVariant} />
-                <Text style={styles.emptyText}>Add at least 2 players to start.</Text>
+                <Text style={styles.emptyText}>{`Add at least ${minPlayers} players to start.`}</Text>
               </View>
             ) : (
               <View style={styles.playerList}>
@@ -185,7 +197,9 @@ export default function PlayersScreen({ navigation }: Props) {
 
             {canStart && (
               <>
-                {/* Deck chips */}
+                {/* Deck chips — Truth or Dare only. Trivia chooses its
+                    categories back in TriviaSetupScreen. */}
+                {isTruthOrDare && (
                 <View style={styles.section}>
                   <Text style={styles.sectionEyebrow}>ACTIVE DECKS</Text>
                   <View style={styles.deckChipsRow}>
@@ -210,6 +224,7 @@ export default function PlayersScreen({ navigation }: Props) {
                     })}
                   </View>
                 </View>
+                )}
 
                 {/* Sip bonus stepper */}
                 <View style={styles.section}>
@@ -238,7 +253,7 @@ export default function PlayersScreen({ navigation }: Props) {
 
           <View style={styles.footer}>
             <JackButton
-              label={canStart ? 'Start Game' : 'Add 2+ Players'}
+              label={canStart ? 'Start Game' : `Add ${minPlayers}+ Players`}
               icon={canStart ? 'play' : undefined}
               onPress={handleStart}
               disabled={!canStart}

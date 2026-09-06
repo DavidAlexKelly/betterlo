@@ -15,6 +15,7 @@ import {
   ALL_RULE_STARTS, ALL_RULE_ENDS, ALL_CHALLENGES,
 } from '../data/gameData';
 import { Player } from '../components/GameContext';
+import { chance, pickOne, randomInt, shuffle } from '../utils/random';
 
 const RULE_DRAW_CHANCE = 0.15;
 
@@ -38,15 +39,6 @@ export interface CardEngineOptions {
   totalRounds: number;
   buildPenaltyCtx: (c: Challenge) => PenaltyContext;
 }
-
-const shuffle = <T,>(arr: T[]): T[] => {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-};
 
 function prioritizeUninvolved(players: Player[], involved: Set<number>): Player[] {
   const uninvolved = shuffle(players.filter(p => !involved.has(p.id)));
@@ -103,15 +95,15 @@ export function useCardEngine(opts: CardEngineOptions) {
 
     // 2. Maybe start a rule — only if none is active and the end card can
     //    still fire before the game finishes.
-    const endDelay = 4 + Math.floor(Math.random() * 3); // 4–6 rounds
+    const endDelay = 4 + randomInt(3); // 4–6 rounds
     if (
       !activeRuleId.current &&
       totalRounds - round > endDelay &&
-      Math.random() < RULE_DRAW_CHANCE
+      chance(RULE_DRAW_CHANCE)
     ) {
       const availableRules = ALL_RULE_STARTS.filter(r => !usedRuleIds.current.has(r.ruleId!));
       if (availableRules.length > 0) {
-        const picked = availableRules[Math.floor(Math.random() * availableRules.length)];
+        const picked = pickOne(availableRules);
         activeRuleId.current = picked.ruleId!;
         usedRuleIds.current.add(picked.ruleId!);
         const endCard = ALL_RULE_ENDS[picked.ruleId!];
@@ -132,7 +124,7 @@ export function useCardEngine(opts: CardEngineOptions) {
       available = pool.filter(c => !usedIds.current.has(c.id));
       if (available.length === 0) available = pool; // single-card pool edge case
     }
-    const picked = available[Math.floor(Math.random() * available.length)];
+    const picked = pickOne(available);
     usedIds.current.add(picked.id);
     return buildDisplay(picked, round);
   }, [buildDisplay, current]);

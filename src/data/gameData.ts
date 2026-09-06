@@ -9,8 +9,14 @@
 //   Letting Loose    → truth (2-3) + chaos (2-3) + dare (2-3, no "bar" tag)
 //   Raising the Bar  → drink + dare + truth + chaos (all intensity, "bar" tag only)
 //   Spicy            → spicy (all, no filter)
+//
+// word_banks.json is keyed by MECHANIC (matching Challenge.mode), never by
+// frontend deck id — see PenaltyContext.mode below. Every bank must carry a
+// `default` list so an unmapped mode degrades to generic content instead of
+// rendering a literal "{topic}" on the card.
 // ─────────────────────────────────────────────────────────────────────────────
 
+import { coinFlip, pickOne } from '../utils/random';
 import drinkCards  from './cards/drink.json';
 import dareCards   from './cards/dare.json';
 import truthCards  from './cards/truth.json';
@@ -67,6 +73,16 @@ export interface PenaltyContext {
   currentRound?: number;
   totalRounds?: number;
   intensity?: 1 | 2 | 3;
+  /**
+   * The MECHANIC of the card being rendered (`drink` | `dare` | `truth` |
+   * `chaos` | `spicy`, or `custom`/a category for user-written cards) — i.e.
+   * `Challenge.mode`, NOT the frontend deck the player selected.
+   *
+   * This is the key used to pick a word bank in `word_banks.json`, so the
+   * two must stay in sync: a truth card draws from `topic.truth`, a chaos
+   * card from `topic.chaos`, and anything unrecognised (custom cards) falls
+   * back to the bank's `default` list.
+   */
   mode?: string;
   /** Additive bonus sips: 0 = standard, 1 = +1, 2 = +2, 3 = +3 */
   bonus?: number;
@@ -94,7 +110,7 @@ export function formatPenalty(count: number): string {
 
 function resolveTakeOrGive(base: keyof typeof PENALTY, ctx: PenaltyContext): string {
   const amount = formatPenalty(getPenalty(base, ctx));
-  return Math.random() < 0.5 ? `take ${amount}` : `give out ${amount}`;
+  return coinFlip() ? `take ${amount}` : `give out ${amount}`;
 }
 
 // ─────────────────────────────────────────────
@@ -237,6 +253,12 @@ export function substituteTokens(
   const tog: Record<string, string> = {};
   const togPattern = /\{take_or_give_(sip|small|medium|large|max)\}/g;
   let togMatch: RegExpExecArray | null;
+  // nosemgrep justification (regex-dos): togPattern is a fixed alternation of
+  // five literals with no nested or ambiguous quantifiers, so it matches in
+  // linear time and cannot backtrack catastrophically. Text comes from bundled
+  // card JSON or a card the user typed on this device — there is no remote
+  // input path into this function.
+  // nosemgrep
   while ((togMatch = togPattern.exec(text)) !== null) {
     const key = togMatch[0];
     if (!tog[key]) {
@@ -249,6 +271,23 @@ export function substituteTokens(
     resolved = resolved.split(token).join(value);
   }
 
+  // Word banks resolve BEFORE the player/penalty passes below. Two reasons:
+  //   1. Bank entries may themselves contain tokens — vote_consequence holds
+  //      values like "drinks {small}" — and those only get resolved if the
+  //      penalty pass runs afterwards. Running banks last leaked raw braces.
+  //   2. Every bank is guaranteed a `default` list (enforced by
+  //      ValidateCards.js), so an unmapped mode can never render "{topic}".
+  // The catch-all deliberately leaves {player1}/{sip}/{small}/... untouched:
+  // they have no matching bank, so `banks[key]` is undefined and the match is
+  // returned verbatim for the passes below to handle.
+  resolved = resolved.replace(/\{(\w+)\}/g, (match, key: string) => {
+    const bank = banks[key];
+    if (!bank) return match;
+    const list = bank[ctx.mode ?? 'default'] ?? bank['default'] ?? [];
+    if (list.length === 0) return match;
+    return pickOne(list);
+  });
+
   return resolved
     .replace(/{player1}/g, players[0].name)
     .replace(/{player2}/g, players.length > 1 ? players[1].name : players[0].name)
@@ -256,12 +295,5 @@ export function substituteTokens(
     .replace(/{small}/g,  formatPenalty(getPenalty('small',  ctx)))
     .replace(/{medium}/g, formatPenalty(getPenalty('medium', ctx)))
     .replace(/{large}/g,  formatPenalty(getPenalty('large',  ctx)))
-    .replace(/{max}/g,    formatPenalty(getPenalty('max',    ctx)))
-    .replace(/\{(\w+)\}/g, (match, key) => {
-      const bank = banks[key];
-      if (!bank) return match;
-      const list = bank[ctx.mode ?? 'default'] ?? bank['default'] ?? [];
-      if (list.length === 0) return match;
-      return list[Math.floor(Math.random() * list.length)];
-    });
+    .replace(/{max}/g,    formatPenalty(getPenalty('max',    ctx)));
 }

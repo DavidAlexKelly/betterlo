@@ -1,0 +1,178 @@
+[
+  {
+    "id": "history-650455ab",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Which of the following countries was not an axis power during World War II?",
+    "answer": "Soviet Union",
+    "distractors": [
+      "Italy",
+      "Germany",
+      "Japan"
+    ]
+  },
+  {
+    "id": "history-e3093434",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "The original Roman alphabet lacked the following letters EXCEPT:",
+    "answer": "X",
+    "distractors": [
+      "W",
+      "U",
+      "J"
+    ]
+  },
+  {
+    "id": "history-0dbf62ee",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "boolean",
+    "difficulty": 2,
+    "question": "In 1967, a magazine published a story about extracting hallucinogenic chemicals from bananas to raise moral questions about banning drugs.",
+    "answer": "True",
+    "distractors": [
+      "False"
+    ]
+  },
+  {
+    "id": "history-11abfa2b",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "During the Mongolian invasions of Japan, what were the Mongol boats mostly stopped by?",
+    "answer": "Typhoons",
+    "distractors": [
+      "Tornados",
+      "Economic depression",
+      "Samurai"
+    ]
+  },
+  {
+    "id": "history-6a8e2a97",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "The 15th century conflicts between the Houses of York and Lancaster are known as the Wars of the what?",
+    "answer": "Wars of the Roses",
+    "distractors": [
+      "Wars of the Lillies",
+      "Wars of the Daffodils",
+      "Wars of the Tulips"
+    ]
+  },
+  {
+    "id": "history-ba0067c2",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "boolean",
+    "difficulty": 2,
+    "question": "If you grab the bladed end of a longsword in a specific way, you will not cut yourself.",
+    "answer": "True",
+    "distractors": [
+      "False"
+    ]
+  },
+  {
+    "id": "history-f2aedc38",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "boolean",
+    "difficulty": 2,
+    "question": "In World War II, Hawker Typhoons served in the Pacific theater.",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "history-f374b34f",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "Who was the leader of the Communist Party of Yugoslavia ?",
+    "answer": "Josip Broz Tito",
+    "distractors": [
+      "Karadjordje Petrovic",
+      "Milos Obilic",
+      "Aleskandar Petrovic"
+    ]
+  },
+  {
+    "id": "history-351330d9",
+    "wedge": "history",
+    "sourceCategory": "Mythology",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which Norse God has a horse named Sleipnir?",
+    "answer": "Odin",
+    "distractors": [
+      "Thor",
+      "Frigg",
+      "Balder"
+    ]
+  },
+  {
+    "id": "history-38f08686",
+    "wedge": "history",
+    "sourceCategory": "Politics",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which Native American tribe/nation requires at least one half blood quantum (equivalent to one parent) to be eligible for membership?",
+    "answer": "Yomba Shoshone Tribe",
+    "distractors": [
+      "Standing Rock Sioux Tribe",
+      "Kiowa Tribe of Oklahoma",
+      "Pawnee Nation of Oklahoma"
+    ]
+  },
+  {
+    "id": "history-3b2b2de0",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which U.S. president was said to have been too honest to lie to his father about chopping down a cherry tree?",
+    "answer": "George Washington",
+    "distractors": [
+      "Abraham Lincoln",
+      "Thomas Jefferson",
+      "James Monroe"
+    ]
+  },
+  {
+    "id": "history-7db05b1f",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "The Battle of Hastings was fought in which year?",
+    "answer": "1066",
+    "distractors": [
+      "911",
+      "1204",
+      "1420"
+    ]
+  },
+  {
+    "id": "history-c36d976d",
+    "wedge": "history",
+    "sourceCategory": "History",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "When was the Gregorian Calendar first adopted?",
+    "answer": "1582",
+    "distractors": [
+      "1623",
+      "1501",
+      "1555"
+    ]
+  }
+]

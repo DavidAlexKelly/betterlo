@@ -214,6 +214,96 @@ export function JackPanel({
 }
 
 // ─────────────────────────────────────────────────────────────
+// JackTile — a JackPanel you can press
+//
+// JackButton is pressable but fixed-height and single-line; JackPanel holds
+// arbitrary content but isn't pressable. The game-mode menu needs both, so
+// this is the panel construction wrapped in the button's press-drop.
+// `disabled` renders a flat, dimmed, ink-outlined face with no shadow — used
+// for modes that aren't built yet.
+// ─────────────────────────────────────────────────────────────
+
+type JackTileProps = {
+  children: React.ReactNode;
+  onPress?: () => void;
+  color?: string;
+  borderColor?: string;
+  shadowColor?: string;
+  radius?: number;
+  shadow?: number;
+  tilt?: string;
+  disabled?: boolean;
+  haptic?: boolean;
+  /** Style for the OUTER wrapper (use for flex/margins). */
+  style?: StyleProp<ViewStyle>;
+  /** Style for the face (use for padding/alignment). */
+  faceStyle?: StyleProp<ViewStyle>;
+  flex?: boolean;
+};
+
+export function JackTile({
+  children, onPress, color = Colors.surfaceContainer, borderColor = Colors.ink,
+  shadowColor = Colors.ink, radius = Jack.radiusBig, shadow = Jack.shadow,
+  tilt, disabled = false, haptic = true, style, faceStyle, flex = false,
+}: JackTileProps) {
+  const drop = useRef(new Animated.Value(0)).current;
+
+  const pressIn = () =>
+    Animated.timing(drop, { toValue: shadow, duration: 70, useNativeDriver: true }).start();
+  const pressOut = () =>
+    Animated.timing(drop, { toValue: 0, duration: 110, useNativeDriver: true }).start();
+
+  const handlePress = () => {
+    if (disabled) return;
+    if (haptic) Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    onPress?.();
+  };
+
+  return (
+    <View style={[flex && { flex: 1 }, tilt ? { transform: [{ rotate: tilt }] } : null, style]}>
+      {/* Hidden when disabled — but the face keeps its marginBottom, so
+          locked and unlocked tiles stay exactly the same height. */}
+      {!disabled && (
+        <View
+          style={{
+            position: 'absolute', top: shadow, left: 0, right: 0, bottom: 0,
+            borderRadius: radius, backgroundColor: shadowColor,
+          }}
+        />
+      )}
+      <Pressable
+        onPress={handlePress}
+        onPressIn={disabled ? undefined : pressIn}
+        onPressOut={disabled ? undefined : pressOut}
+        disabled={disabled}
+        style={flex ? { flex: 1 } : undefined}
+        accessibilityRole="button"
+        accessibilityState={{ disabled }}
+      >
+        <Animated.View
+          style={[
+            flex && { flex: 1 },
+            {
+              marginBottom: shadow,
+              borderRadius: radius,
+              borderWidth: Jack.border,
+              borderColor: disabled ? Colors.outlineVariant : borderColor,
+              backgroundColor: color,
+              opacity: disabled ? 0.55 : 1,
+              overflow: 'hidden',
+              transform: [{ translateY: drop }],
+            },
+            faceStyle,
+          ]}
+        >
+          {children}
+        </Animated.View>
+      </Pressable>
+    </View>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────
 // JackBadge — small sticker chip
 // ─────────────────────────────────────────────────────────────
 

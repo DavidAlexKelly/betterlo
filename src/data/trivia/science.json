@@ -1,0 +1,148 @@
+[
+  {
+    "id": "science-1c9caf2b",
+    "wedge": "science",
+    "sourceCategory": "Animals",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What is the name of a rabbit's abode?",
+    "answer": "Burrow",
+    "distractors": [
+      "Nest",
+      "Den",
+      "Dray"
+    ]
+  },
+  {
+    "id": "science-90a09c57",
+    "wedge": "science",
+    "sourceCategory": "Science: Computers",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "How long is an IPv6 address?",
+    "answer": "128 bits",
+    "distractors": [
+      "32 bits",
+      "64 bits",
+      "128 bytes"
+    ]
+  },
+  {
+    "id": "science-bafafb73",
+    "wedge": "science",
+    "sourceCategory": "Science: Computers",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What does CPU stand for?",
+    "answer": "Central Processing Unit",
+    "distractors": [
+      "Central Process Unit",
+      "Computer Personal Unit",
+      "Central Processor Unit"
+    ]
+  },
+  {
+    "id": "science-22e72aa8",
+    "wedge": "science",
+    "sourceCategory": "Science & Nature",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "How many hearts does an octopus have?",
+    "answer": "Three",
+    "distractors": [
+      "One",
+      "Two",
+      "Four"
+    ]
+  },
+  {
+    "id": "science-30cb4f83",
+    "wedge": "science",
+    "sourceCategory": "Science & Nature",
+    "type": "boolean",
+    "difficulty": 2,
+    "question": "Centripetal force is an apparent force that acts outward on a body moving around a center, arising from the body's inertia.",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "science-8ae2e4a4",
+    "wedge": "science",
+    "sourceCategory": "Science: Computers",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "What does the DOS in Microsoft's first operating system \"MS-DOS\" stand for?",
+    "answer": "Disk Operating System",
+    "distractors": [
+      "Dumb Operating System",
+      "Driver Oriented System",
+      "Diskless Operating System"
+    ]
+  },
+  {
+    "id": "science-dd7f2d55",
+    "wedge": "science",
+    "sourceCategory": "Science: Computers",
+    "type": "boolean",
+    "difficulty": 2,
+    "question": "MacOS is based on Linux.",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "science-34d8a088",
+    "wedge": "science",
+    "sourceCategory": "Science & Nature",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which of these is used to show that Earth spins on an axis?",
+    "answer": "Foucault Pendulum",
+    "distractors": [
+      "Polaris",
+      "Sundial",
+      "Tectonic Plates"
+    ]
+  },
+  {
+    "id": "science-763e76e7",
+    "wedge": "science",
+    "sourceCategory": "Science & Nature",
+    "type": "boolean",
+    "difficulty": 3,
+    "question": "Albert Einstein won a noble prize for his theory of relativity.",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "science-b01fed2f",
+    "wedge": "science",
+    "sourceCategory": "Science: Computers",
+    "type": "boolean",
+    "difficulty": 3,
+    "question": "DHCP stands for Dynamic Host Configuration Port.",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "science-fbcfb75e",
+    "wedge": "science",
+    "sourceCategory": "Vehicles",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "What engine is in the Lexus SC400?",
+    "answer": "1UZ-FE",
+    "distractors": [
+      "2JZ-GTE",
+      "7M-GTE",
+      "5M-GE"
+    ]
+  }
+]

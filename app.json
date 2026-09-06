@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Sip Happens",
-    "slug": "betterlo",
+    "slug": "sip-happens",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

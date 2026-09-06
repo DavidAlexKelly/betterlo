@@ -1,25 +1,34 @@
 {
   "topic": {
-    "social": [
-      "Aries",
-      "Taurus",
-      "Gemini",
-      "Cancer",
-      "Leo",
-      "Virgo",
-      "Libra",
-      "Scorpio",
-      "Sagittarius",
-      "Capricorn",
-      "Aquarius",
-      "Pisces",
+    "drink": [
+      "types of beer",
+      "classic cocktails",
+      "drinking games",
+      "hangover cures",
+      "things people do drunk",
+      "reasons to take a shot",
+      "pub snacks",
+      "famous party songs",
+      "worst hangover stories",
+      "cheapest drinks you've ever bought",
+      "bars or clubs you've been kicked out of",
+      "song lyrics you've pretended to know",
+      "music festivals you've been to",
+      "times you've pretended to be sober"
+    ],
+    "dare": [
       "superpowers",
       "zombie apocalypse survival skills",
       "worst dates you've ever been on",
       "things you regret buying",
       "most overrated apps",
       "ridiculous nicknames",
-      "impressions of people in the room"
+      "impressions of people in the room",
+      "superheroes",
+      "cartoon characters",
+      "Disney characters",
+      "TV shows",
+      "famous people"
     ],
     "truth": [
       "things people lie about",
@@ -41,23 +50,7 @@
       "things you've googled at 3am",
       "crushes on celebrities"
     ],
-    "drink": [
-      "types of beer",
-      "classic cocktails",
-      "drinking games",
-      "hangover cures",
-      "things people do drunk",
-      "reasons to take a shot",
-      "pub snacks",
-      "famous party songs",
-      "worst hangover stories",
-      "cheapest drinks you've ever bought",
-      "bars or clubs you've been kicked out of",
-      "song lyrics you've pretended to know",
-      "music festivals you've been to",
-      "times you've pretended to be sober"
-    ],
-    "wild": [
+    "chaos": [
       "illegal things most people have done",
       "celebrities you'd sleep with",
       "things that'd get you cancelled",
@@ -106,8 +99,24 @@
       "cartoon characters"
     ]
   },
+  "star_sign": {
+    "default": [
+      "Aries",
+      "Taurus",
+      "Gemini",
+      "Cancer",
+      "Leo",
+      "Virgo",
+      "Libra",
+      "Scorpio",
+      "Sagittarius",
+      "Capricorn",
+      "Aquarius",
+      "Pisces"
+    ]
+  },
   "rank_scenario": {
-    "wild": [
+    "default": [
       "survive a zombie apocalypse",
       "go feral on a night out",
       "survive a week in the woods",
@@ -121,7 +130,7 @@
     ]
   },
   "vote_scenario": {
-    "social": [
+    "default": [
       "survive a zombie apocalypse",
       "cry watching a rom-com",
       "accidentally reply all to a company-wide email",
@@ -131,7 +140,7 @@
     ]
   },
   "vote_consequence": {
-    "social": [
+    "default": [
       "drinks {small}",
       "gives out {medium}",
       "drinks {small}",

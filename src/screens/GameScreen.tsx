@@ -47,9 +47,13 @@ export default function GameScreen({ navigation }: Props) {
     currentRound: state.currentRound,
     totalRounds: state.totalRounds,
     intensity: c.intensity,
-    mode: state.selectedModes[0] ?? 'social',
+    // The CARD's mechanic — not the selected deck. word_banks.json is keyed by
+    // mechanic, so a truth card pulls truth topics and a chaos card pulls chaos
+    // topics even when several decks are mixed into a single game. Passing the
+    // frontend deck id here (the old behaviour) matched no bank at all.
+    mode: c.mode,
     bonus: state.sipBonus,
-  }), [state.currentRound, state.totalRounds, state.selectedModes, state.sipBonus]);
+  }), [state.currentRound, state.totalRounds, state.sipBonus]);
 
   const engine = useCardEngine({
     players: state.players,

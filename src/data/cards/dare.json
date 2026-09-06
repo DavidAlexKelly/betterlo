@@ -6,6 +6,12 @@
     "intensity": 1
   },
   {
+    "text": "{player1} has to describe {player2} in 3 words. {player2} drinks {sip} if they disagree.",
+    "action": "Three words",
+    "icon": "chatbubble",
+    "intensity": 1
+  },
+  {
     "text": "LAVA MONSTER! Everyone get off the ground — last person with feet on the floor takes {large}.",
     "action": "Get off the floor!",
     "icon": "warning",

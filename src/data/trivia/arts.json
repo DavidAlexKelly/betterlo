@@ -1,0 +1,138 @@
+[
+  {
+    "id": "arts-24d46724",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Books",
+    "type": "boolean",
+    "difficulty": 1,
+    "question": "Dracula is destroyed by contact with sunlight",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "arts-38c6dfdc",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "In Dungeons and Dragons (5th edition), what stat do you normally add onto your initiative die roll?",
+    "answer": "Dexterity",
+    "distractors": [
+      "Speed",
+      "Strength",
+      "Wisdom"
+    ]
+  },
+  {
+    "id": "arts-57ec8277",
+    "wedge": "arts",
+    "sourceCategory": "Art",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What is a fundamental element of the Gothic style of architecture?",
+    "answer": "pointed arch",
+    "distractors": [
+      "coffered ceilings",
+      "façades surmounted by a pediment",
+      "internal frescoes"
+    ]
+  },
+  {
+    "id": "arts-600c0ce2",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Board Games",
+    "type": "boolean",
+    "difficulty": 1,
+    "question": "\"PAYDAY: The Heist\" is a sequel to the board game \"Payday\".",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "arts-7751e5d0",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "In \"Magic: The Gathering\", what instant card has the highest converted mana cost?",
+    "answer": "Blinkmoth Infusion",
+    "distractors": [
+      "Vitalizing Wind",
+      "Chant of Vitu-Ghazi",
+      "Assert Authority"
+    ]
+  },
+  {
+    "id": "arts-9297d476",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "The novel \"Of Mice And Men\" was written by what author?",
+    "answer": "John Steinbeck",
+    "distractors": [
+      "George Orwell",
+      "Mark Twain",
+      "Harper Lee"
+    ]
+  },
+  {
+    "id": "arts-7450e7fa",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "What is the world's oldest board game?",
+    "answer": "Senet",
+    "distractors": [
+      "Chess",
+      "Checkers",
+      "Go"
+    ]
+  },
+  {
+    "id": "arts-7e7d7fab",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Some of the \"Fallen Empires\" cards from \"Magic: The Gathering\" were misprinted on the backs of which other card game?",
+    "answer": "Wyvern",
+    "distractors": [
+      "Pokemon",
+      "Dominion",
+      "Yu-Gi-Oh"
+    ]
+  },
+  {
+    "id": "arts-a75959e2",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "What is the sum of all the tiles in a standard box of Scrabble?",
+    "answer": "187",
+    "distractors": [
+      "207",
+      "197",
+      "177"
+    ]
+  },
+  {
+    "id": "arts-b760bd71",
+    "wedge": "arts",
+    "sourceCategory": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "What Magic: The Gathering card's flavor text is just 'Ribbit.'?",
+    "answer": "Turn to Frog",
+    "distractors": [
+      "Spore Frog",
+      "Bloated Toad",
+      "Frogmite"
+    ]
+  }
+]

@@ -33,6 +33,9 @@ import {
 } from '@expo-google-fonts/be-vietnam-pro';
 
 import { GameProvider } from './src/components/GameContext';
+import { TriviaProvider } from './src/components/TriviaContext';
+import { DealerProvider } from './src/components/DealerContext';
+import { TraitorsProvider } from './src/components/TraitorsContext';
 import { Ads } from './src/monetization/ads';
 import { isAgeConfirmed } from './src/utils/ageGate';
 import { requestTrackingPermission } from './src/utils/tracking';
@@ -46,11 +49,26 @@ import PlayScreen  from './src/screens/PlayScreen';
 import DecksScreen from './src/screens/DecksScreen';
 import CardsScreen from './src/screens/CardsScreen';
 
-// Setup flow (no bottom nav)
+// Truth or Dare setup flow (no bottom nav)
 import DeckSelectScreen from './src/screens/DeckSelectScreen';
 import PlayersScreen    from './src/screens/PlayersScreen';
 import GameScreen       from './src/screens/GameScreen';
 import GameOverScreen   from './src/screens/GameOverScreen';
+
+// Trivia
+import TriviaSetupScreen from './src/screens/TriviaSetupScreen';
+import TriviaGameScreen  from './src/screens/TriviaGameScreen';
+import TriviaOverScreen  from './src/screens/TriviaOverScreen';
+
+// Screw the Dealer!
+import DealerSetupScreen from './src/screens/DealerSetupScreen';
+import DealerGameScreen  from './src/screens/DealerGameScreen';
+import DealerOverScreen  from './src/screens/DealerOverScreen';
+
+// Word Traitors!
+import TraitorsSetupScreen from './src/screens/TraitorsSetupScreen';
+import TraitorsGameScreen  from './src/screens/TraitorsGameScreen';
+import TraitorsOverScreen  from './src/screens/TraitorsOverScreen';
 
 // Legal
 import LegalScreen from './src/screens/LegalScreen';
@@ -107,6 +125,9 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <GameProvider>
+        <TriviaProvider>
+        <DealerProvider>
+        <TraitorsProvider>
         <NavigationContainer>
           <StatusBar style="light" />
           <Stack.Navigator
@@ -127,7 +148,11 @@ export default function App() {
             <Stack.Screen name="Decks"      component={DecksScreen} />
             <Stack.Screen name="Cards"      component={CardsScreen} />
             <Stack.Screen name="DeckSelect" component={DeckSelectScreen} />
-            <Stack.Screen name="Players"    component={PlayersScreen} />
+            <Stack.Screen
+              name="Players"
+              component={PlayersScreen}
+              initialParams={{ next: 'Game' }}
+            />
             <Stack.Screen
               name="Game"
               component={GameScreen}
@@ -138,9 +163,51 @@ export default function App() {
               component={GameOverScreen}
               options={{ gestureEnabled: false }}
             />
+
+            {/* Trivia — same no-swipe-out treatment as Game/GameOver */}
+            <Stack.Screen name="TriviaSetup" component={TriviaSetupScreen} />
+            <Stack.Screen
+              name="TriviaGame"
+              component={TriviaGameScreen}
+              options={{ gestureEnabled: false }}
+            />
+            <Stack.Screen
+              name="TriviaOver"
+              component={TriviaOverScreen}
+              options={{ gestureEnabled: false }}
+            />
+
+            {/* Screw the Dealer! */}
+            <Stack.Screen name="DealerSetup" component={DealerSetupScreen} />
+            <Stack.Screen
+              name="DealerGame"
+              component={DealerGameScreen}
+              options={{ gestureEnabled: false }}
+            />
+            <Stack.Screen
+              name="DealerOver"
+              component={DealerOverScreen}
+              options={{ gestureEnabled: false }}
+            />
+
+            {/* Word Traitors! */}
+            <Stack.Screen name="TraitorsSetup" component={TraitorsSetupScreen} />
+            <Stack.Screen
+              name="TraitorsGame"
+              component={TraitorsGameScreen}
+              options={{ gestureEnabled: false }}
+            />
+            <Stack.Screen
+              name="TraitorsOver"
+              component={TraitorsOverScreen}
+              options={{ gestureEnabled: false }}
+            />
             <Stack.Screen name="Legal" component={LegalScreen} />
           </Stack.Navigator>
         </NavigationContainer>
+        </TraitorsProvider>
+        </DealerProvider>
+        </TriviaProvider>
       </GameProvider>
     </SafeAreaProvider>
   );

@@ -171,7 +171,7 @@ export default function DeckSelectScreen({ navigation }: Props) {
           <JackButton
             label="Next — Add Players"
             icon="arrow-forward"
-            onPress={() => navigation.navigate('Players')}
+            onPress={() => navigation.navigate('Players', { next: 'Game' })}
           />
         </View>
       </ScrollView>

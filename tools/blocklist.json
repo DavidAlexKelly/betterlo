@@ -1,0 +1,5 @@
+{
+  "_comment": "Question ids excluded by tools/convert-trivia.js. Use this to drop factually wrong, misspelled, ambiguous or far-too-niche questions WITHOUT hand-editing the generated files in src/data/trivia/ (which are overwritten on every run). Find an id in the generated JSON, paste it into 'blocked' with a note here, then re-run: node tools/convert-trivia.js",
+  "_candidates": "Known-suspect questions from the current Open Trivia DB pull, left ENABLED for now so the Phase 1 seed keeps its volume — review before shipping: 'Montreal Canadians' (misspelt Canadiens), 'Albert Einstein won a noble prize' (misspelt Nobel), 'Rachet & Clank' (misspelt Ratchet), 'When was the first official international game played?' (does not say of what sport), plus several very niche entries (Counter-Strike 1.6 MP5 variant, Lexus SC400 engine code, Trackmania2 top speed).",
+  "blocked": []
+}

@@ -1,0 +1,704 @@
+[
+  {
+    "id": "entertainment-0c2d2c4c",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "In \"World of Warcraft,\" which of the following can be found outside of every instanced dungeon?",
+    "answer": "A Meeting Stone",
+    "distractors": [
+      "A Summoning Stone",
+      "A Gathering Stone",
+      "A Hearthstone"
+    ]
+  },
+  {
+    "id": "entertainment-0dd3218c",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What is the maximum HP in Terraria?",
+    "answer": "500",
+    "distractors": [
+      "400",
+      "1000",
+      "100"
+    ]
+  },
+  {
+    "id": "entertainment-1db8dfea",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Brian May was the guitarist for which band?",
+    "answer": "Queen",
+    "distractors": [
+      "Pink Floyd",
+      "Rolling Stones",
+      "The Doors"
+    ]
+  },
+  {
+    "id": "entertainment-2668ccf7",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What was the subject of the 2014 song \"CoCo\" by American rapper O. T. Genasis?",
+    "answer": "Cocaine",
+    "distractors": [
+      "Conan O'Brien",
+      "Cobalt(II) carbonate",
+      "Coconut cream pie"
+    ]
+  },
+  {
+    "id": "entertainment-2dc3b370",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What is the name of the City in Saints Row The Third?",
+    "answer": "Steelport",
+    "distractors": [
+      "Stilwater",
+      "Carcer",
+      "Liberty"
+    ]
+  },
+  {
+    "id": "entertainment-30551d2c",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Sting, the lead vocalist of The Police, primarily plays what instrument?",
+    "answer": "Bass Guitar",
+    "distractors": [
+      "Drums",
+      "Guitar",
+      "Keyboards"
+    ]
+  },
+  {
+    "id": "entertainment-3572d4c8",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What is the real name of the famous spanish humorist, El Risitas?",
+    "answer": "Juan Joya Borga",
+    "distractors": [
+      "Gabriel Garcia Marquez",
+      "Jesus Quintero",
+      "Ernesto Guevara"
+    ]
+  },
+  {
+    "id": "entertainment-3de1e5e7",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": 1,
+    "question": "In \"Tony Hawk's Underground\", the main character's friend turned rival is named \"Jeff Sampson\"",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "entertainment-3f2a387e",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Which year was the album \"Year of the Snitch\" by Death Grips released?",
+    "answer": "2018",
+    "distractors": [
+      "2013",
+      "2017",
+      "2011"
+    ]
+  },
+  {
+    "id": "entertainment-5e3cf092",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Who played the Waitress in the Spam sketch of \"Monty Python's Flying Circus\"?",
+    "answer": "Terry Jones",
+    "distractors": [
+      "Eric Idle",
+      "Graham Chapman",
+      "John Cleese"
+    ]
+  },
+  {
+    "id": "entertainment-6803f85f",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "In the original Spyro game who is the first villain?",
+    "answer": "Gnasty Gnorc",
+    "distractors": [
+      "Ripto",
+      "Sorceress",
+      "Cynder"
+    ]
+  },
+  {
+    "id": "entertainment-79108acc",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "The characters of \"Log Horizon\" are trapped in what game?",
+    "answer": "Elder Tale",
+    "distractors": [
+      "Sword Art Online",
+      "Tower Unite",
+      "Yggdrasil"
+    ]
+  },
+  {
+    "id": "entertainment-7e329225",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Cartoon & Animations",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "In South Park, what is Stan's surname?",
+    "answer": "Marsh",
+    "distractors": [
+      "Stotch",
+      "Broflovski",
+      "Tweak"
+    ]
+  },
+  {
+    "id": "entertainment-83feb0fb",
+    "wedge": "entertainment",
+    "sourceCategory": "Celebrities",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "By what name is Carlos Estevez better known?",
+    "answer": "Charlie Sheen",
+    "distractors": [
+      "Ricky Martin",
+      "Bruno Mars",
+      "Joaquin Phoenix"
+    ]
+  },
+  {
+    "id": "entertainment-883e51b8",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "On what medium was \"Clannad\" first created?",
+    "answer": "Visual novel",
+    "distractors": [
+      "Anime",
+      "Manga",
+      "Light novel"
+    ]
+  },
+  {
+    "id": "entertainment-92e95fb7",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Who are the original creators of Rachet & Clank?",
+    "answer": "Insomniac Games",
+    "distractors": [
+      "PixelTail Games",
+      "Rare",
+      "Bethesda"
+    ]
+  },
+  {
+    "id": "entertainment-9c200295",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Which of the following won the first season of American Idol in 2002?",
+    "answer": "Kelly Clarkson",
+    "distractors": [
+      "Justin Guarini",
+      "Ruben Studdard",
+      "Chris Daughtry"
+    ]
+  },
+  {
+    "id": "entertainment-d6dfefb5",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What is the boss round featured in the \"Call Of Duty: Zombies\" map \"Five\"?",
+    "answer": "The Pentagon Thief",
+    "distractors": [
+      "Hellhounds",
+      "Jumping Jacks",
+      "Napalm Zombie"
+    ]
+  },
+  {
+    "id": "entertainment-d9bd3d9f",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "What is the Alien Race in the game \"Lego Racers 2\" known as?",
+    "answer": "Ramas",
+    "distractors": [
+      "Slizers",
+      "Roboriders",
+      "Turagas"
+    ]
+  },
+  {
+    "id": "entertainment-dbaa3969",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": 1,
+    "question": "The name of the main character of the video game \"The Legend of Zelda\", is Zelda.",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "entertainment-09ecfef0",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "Which of these is NOT a name of an album released by American rapper Pitbull?",
+    "answer": "Welcome to Miami",
+    "distractors": [
+      "Dale",
+      "Global Warming",
+      "Armando"
+    ]
+  },
+  {
+    "id": "entertainment-1471edac",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
+    "answer": "Gopher",
+    "distractors": [
+      "Tigger",
+      "Heffalumps",
+      "Rabbit"
+    ]
+  },
+  {
+    "id": "entertainment-2ff87ab9",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "The rights to the \"Rayman\" series are owned by which company?",
+    "answer": "Ubisoft",
+    "distractors": [
+      "Nintendo",
+      "EA",
+      "Sony"
+    ]
+  },
+  {
+    "id": "entertainment-30c0e2fb",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Television",
+    "type": "boolean",
+    "difficulty": 2,
+    "question": "In \"Star Trek\", Klingons are commonly referred to as \"Black Elves\".",
+    "answer": "False",
+    "distractors": [
+      "True"
+    ]
+  },
+  {
+    "id": "entertainment-4d4434fb",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "What is the name of the second studio album released by American rapper Post Malone in 2018?",
+    "answer": "Beerbongs & Bentleys",
+    "distractors": [
+      "Takin' Shots",
+      "Rockstar",
+      "Better Now"
+    ]
+  },
+  {
+    "id": "entertainment-4e8f1f2b",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Comics",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "Who authored The Adventures of Tintin?",
+    "answer": "Hergé",
+    "distractors": [
+      "E.P. Jacobs",
+      "Rin Tin Tin",
+      "Chic Young"
+    ]
+  },
+  {
+    "id": "entertainment-591e01e5",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "In Back to the Future Part II, Marty and Dr. Emmett Brown go to which future date?",
+    "answer": "October 21, 2015",
+    "distractors": [
+      "August 28, 2015",
+      "July 20, 2015",
+      "January 25, 2015"
+    ]
+  },
+  {
+    "id": "entertainment-5cc5fa26",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "What is Meg's full name in \"Family Guy\"?",
+    "answer": "Megatron Griffin",
+    "distractors": [
+      "Who-Cares Griffin",
+      "Neil Griffin",
+      "Megan Griffin"
+    ]
+  },
+  {
+    "id": "entertainment-72da0aa5",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Cartoon & Animations",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "Which \"Toy Story\" character was voiced by Don Rickles?",
+    "answer": "Mr. Potato Head",
+    "distractors": [
+      "Slinky Dog",
+      "Hamm",
+      "Rex"
+    ]
+  },
+  {
+    "id": "entertainment-747b7388",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "What is not a default game mode in Counter-Strike (2000)?",
+    "answer": "Arms Race",
+    "distractors": [
+      "Hostage Rescue",
+      "Bomb Defusal",
+      "Assassination"
+    ]
+  },
+  {
+    "id": "entertainment-851b4a60",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "What is the name of the protagonist's first Persona in \"Persona 5\"?",
+    "answer": "Arsene",
+    "distractors": [
+      "Mara",
+      "Izanagi",
+      "Sandaphlon"
+    ]
+  },
+  {
+    "id": "entertainment-9288f126",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": 2,
+    "question": "Metal Gear Solid V: The Phantom Pain runs on the Fox Engine.",
+    "answer": "True",
+    "distractors": [
+      "False"
+    ]
+  },
+  {
+    "id": "entertainment-a08343c9",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "What was Bon Iver's debut album released in 2007?",
+    "answer": "For Emma, Forever Ago",
+    "distractors": [
+      "Bon Iver, Bon Iver",
+      "22, A Million",
+      "Blood Bank EP"
+    ]
+  },
+  {
+    "id": "entertainment-aa4cfe2b",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "In \"Call Of Duty: Zombies\", which map features the \"Fly Trap\" easter egg?",
+    "answer": "Der Riese",
+    "distractors": [
+      "Tranzit",
+      "Call Of The Dead",
+      "Shi No Numa"
+    ]
+  },
+  {
+    "id": "entertainment-b9540d86",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "Which of these Queen songs were sampled for the baseline in Vanilla \"Ice's Ice Ice Baby?\"",
+    "answer": "Under Pressure",
+    "distractors": [
+      "Don't Stop Me Now",
+      "Brighton Rock",
+      "Lazing On A Sunday Afternoon"
+    ]
+  },
+  {
+    "id": "entertainment-be81c1ba",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "In Prokofiev's 'Peter and the Wolf', the wolf itself is represented by a trio of which musical instrument?",
+    "answer": "French horn",
+    "distractors": [
+      "Oboe",
+      "Clarinet",
+      "Cello"
+    ]
+  },
+  {
+    "id": "entertainment-cb75c936",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "In \"Overwatch\", how much health does Roadhog's \"Take a Breather\" ability recover?",
+    "answer": "300",
+    "distractors": [
+      "100",
+      "200",
+      "400"
+    ]
+  },
+  {
+    "id": "entertainment-12a23cf2",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which song was the callsign for Stefan Verdemann's KWFM radio station in Urasawa Naoki's \"Monster\"?",
+    "answer": "Over the Rainbow",
+    "distractors": [
+      "What a Wonderful World",
+      "When You Wish Upon A Star",
+      "Singing In The Rain"
+    ]
+  },
+  {
+    "id": "entertainment-2d087afb",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "In the \"Dragon Ball\" franchise, what is the name of Goku's brother?",
+    "answer": "Raditz",
+    "distractors": [
+      "Gohan",
+      "Vegeta",
+      "Bardock"
+    ]
+  },
+  {
+    "id": "entertainment-3ad3fc1b",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "In the Friday The 13th series, what year did Jason drown in?",
+    "answer": "1957",
+    "distractors": [
+      "1955",
+      "1953",
+      "1959"
+    ]
+  },
+  {
+    "id": "entertainment-6e2a1466",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which variant of the MP5 is depicted in Counter-Strike 1.6?",
+    "answer": "MP5N",
+    "distractors": [
+      "MP5SD",
+      "MP5K",
+      "MP5RAS"
+    ]
+  },
+  {
+    "id": "entertainment-7adfa90b",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "What year did Dire Straits's Song \"Money for Nothing\" release?",
+    "answer": "1985",
+    "distractors": [
+      "1973",
+      "1980",
+      "1991"
+    ]
+  },
+  {
+    "id": "entertainment-8830de76",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which day in \"Papers, Please\" does the man in red appear?",
+    "answer": "Day 23",
+    "distractors": [
+      "Day 20",
+      "Day 17",
+      "Day 15"
+    ]
+  },
+  {
+    "id": "entertainment-88b2a3fc",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Which lyric is about Red Hot Chili Peppers frontman Anthony Kiedis?",
+    "answer": "\"A rainy Lithuanian / Is dancing as an Indian\"",
+    "distractors": [
+      "\"Fly away on, my zephyr / I feel it more than ever\"",
+      "\"And I liked the dimple in your chin / Your pale blue eyes\"",
+      "\"You used to be so warm and affectionate...but now you're quick to get into your regret\""
+    ]
+  },
+  {
+    "id": "entertainment-8a71c7af",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "In \"Sonic the Hedgehog 2\" for the Sega Genesis, what do you input in the sound test screen to access the secret level select?",
+    "answer": "The Lead Programmer's birthday",
+    "distractors": [
+      "The first release date of \"Sonic the Hedgehog\"",
+      "The date Sonic Team was founded",
+      "The first release date of \"Sonic the Hedgehog 2\""
+    ]
+  },
+  {
+    "id": "entertainment-98d07f6a",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "Where was Nicki Minaj born?",
+    "answer": "Trinidad and Tobago",
+    "distractors": [
+      "Haiti",
+      "Saint Lucia",
+      "Grenada"
+    ]
+  },
+  {
+    "id": "entertainment-a26186dd",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "What is the Klingon's afterlife called?",
+    "answer": "Sto-vo-kor",
+    "distractors": [
+      "Valhalla",
+      "Karon'gahk",
+      "New Jersey"
+    ]
+  },
+  {
+    "id": "entertainment-a3ad0278",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "How long are all the cutscenes from Metal Gear Solid 4 (PS3, 2008) combined?",
+    "answer": "8 hours",
+    "distractors": [
+      "4 hours",
+      "12 hours",
+      "5 hours"
+    ]
+  },
+  {
+    "id": "entertainment-bd368387",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Japanese Anime & Manga",
+    "type": "boolean",
+    "difficulty": 3,
+    "question": "The protagonist in \"Humanity Has Declined\" has no discernable name and is simply referred to as 'I' for most of the series.",
+    "answer": "True",
+    "distractors": [
+      "False"
+    ]
+  },
+  {
+    "id": "entertainment-de13984c",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": 3,
+    "question": "McCree from Overwatch originally started as a character that was going to appear in a scrapped Starcraft game.",
+    "answer": "True",
+    "distractors": [
+      "False"
+    ]
+  },
+  {
+    "id": "entertainment-e6d94650",
+    "wedge": "entertainment",
+    "sourceCategory": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "What is the fastest speed possible in Trackmania²: Stadium?",
+    "answer": "1000 km/h",
+    "distractors": [
+      "500 km/h",
+      "320 km/h",
+      "100 km/h"
+    ]
+  }
+]

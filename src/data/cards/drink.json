@@ -306,7 +306,7 @@
     "intensity": 1
   },
   {
-    "text": "If you're a {topic} — {take_or_give_small}.",
+    "text": "If you're a {star_sign} — {take_or_give_small}.",
     "action": "Star sign check",
     "icon": "planet",
     "intensity": 1
@@ -484,5 +484,17 @@
     "action": "Think fast",
     "icon": "game-controller",
     "intensity": 2
+  },
+  {
+    "text": "If you're an only child, take {sip}.",
+    "action": "Drink up",
+    "icon": "person",
+    "intensity": 1
+  },
+  {
+    "text": "Give out {small} if you haven't seen any of the Lord of the Rings movies.",
+    "action": "Drink up",
+    "icon": "film",
+    "intensity": 1
   }
 ]

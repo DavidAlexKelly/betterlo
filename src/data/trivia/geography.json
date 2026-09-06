@@ -1,0 +1,56 @@
+[
+  {
+    "id": "geography-51fb516f",
+    "wedge": "geography",
+    "sourceCategory": "Geography",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "All of the following are classified as Finno-Ugric languages EXCEPT:",
+    "answer": "Samoyedic",
+    "distractors": [
+      "Hungarian",
+      "Finnish",
+      "Estonian"
+    ]
+  },
+  {
+    "id": "geography-5411b516",
+    "wedge": "geography",
+    "sourceCategory": "Geography",
+    "type": "multiple",
+    "difficulty": 1,
+    "question": "Which of these places is a location in Cornwall?",
+    "answer": "Barcelona",
+    "distractors": [
+      "Madrid",
+      "Alicante",
+      "Lisbon"
+    ]
+  },
+  {
+    "id": "geography-762e6660",
+    "wedge": "geography",
+    "sourceCategory": "Geography",
+    "type": "boolean",
+    "difficulty": 1,
+    "question": "Rhode Island is actually located on the US mainland, despite its name.",
+    "answer": "True",
+    "distractors": [
+      "False"
+    ]
+  },
+  {
+    "id": "geography-94865850",
+    "wedge": "geography",
+    "sourceCategory": "Geography",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "Which is the largest city in Morocco?",
+    "answer": "Casablanca",
+    "distractors": [
+      "Rabat",
+      "Fes",
+      "Sale"
+    ]
+  }
+]
